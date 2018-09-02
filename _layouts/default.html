@@ -1,18 +1,19 @@
----
-layout: default
-title: EmberXD
----
+<!DOCTYPE html>
 
-<h2>{{ page.title }}</h2>
+<html>
 
-<p>最新文章</p>
+<head>
 
-<ul>
+　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-　　{% for post in site.posts %}
+　　<title>{{ page.title }}</title>
 
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+</head>
 
-　　{% endfor %}
+<body>
 
-</ul>
+　　{{ content }}
+
+</body>
+
+</html>
